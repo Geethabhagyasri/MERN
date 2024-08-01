@@ -1,0 +1,16 @@
+{
+  "name": "geethanodejsproject",
+  "version": "1.0.0",
+  "description": "creating API",
+  "main": "server.js",
+  "scripts": {
+    "test": "basic npm commands"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "console"
+  ],
+  "author": "geetha",
+  "license": "ISC"
+}

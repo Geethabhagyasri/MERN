@@ -1,0 +1,105 @@
+                                             REACT
+
+-->JSX--COMBINATION of html,css,javascript&text--data is in  {}
+----------------------------------------------
+CSS:
+-->attribute here is "className"
+-->CSS can be done in 4ways in react :
+
+           i)inline                 
+           ii)internal 
+           iii)objectwise /Styled components
+           iv)external/stylesheet
+
+-->px,em,% are not used-but if we need px then"px"
+-->properties names which consists 2words done by camelcase format
+-------------------------------------------------------------------
+COMPONENT:
+-->here div,function,class are COMPONENT|||||"component means container
+
+types:
+1)CLASS COMPONENTS--return comes inside render()
+2)FUNCTIONAL COMPONENTS--ends with return keyword
+
+conclusion:
+main  goal of components--->easily recognise the bug by dividing the page into small chuncks
+--------------------------------------------------------------------------------------------
+STATES&PROPS:
+
+STATES:
+-->states--initialize the variable...setState()-->define variables and trigger UI updates,
+access state variables ,aslo change the state variables .
+variables
+-->if we want to initialize the state variable it comes in a constructor()&super()
+-->this.state--we can initialize the variable--stateful components
+-->states contains info about components,1st we need to set default value to state to get
+ the  components initial state.
+
+-->to get initial state we use getInitialState()
+
+EX:
+constructor(){
+super();
+this.state={myinfo:true};//myinfo--state variable
+}
+
+constructor():
+i)used for obj creation
+ii)no need to call explicitly
+
+this:
+easily recognises the class & functionals
+-------------------------------------------------------------------------------------------
+PROPS:
+props--i.e properties --used for carry over states variable from one page to another by
+'this.props.name'
+default  props:--by using 'defaultProps'is a keyword which carries values from the same file
+===========================================================================================
+REACT LIFECYCLE:
+
+4phases:
+Initial Phase
+Mounting Phase
+Updating Phase
+Unmounting Phase
+
+Initial Phase:
+--> In this phase, a component contains the default Props and initial State.
+-->getDefaultProps()
+-->getInitialState()
+
+mounting:
+-->in this phase component is created and inserted into the DOM
+-->render()
+-->componentWillMount():invoked immediately before a component gets rendered into the DOM. 
+-->componentDidMount():invoked immediately after a component gets rendered and placed on the DOM.
+
+updating:
+-->This phase happens when a component’s props or state change
+-->When an update is triggered, React calls several lifecycle methods in a specific order
+
+Unmounting Phase:
+-->It is the final phase of the react component lifecycle. 
+-->called when a component instance is destroyed and unmounted from the DOM. 
+-->componentWillUnmount():it performs any necessary cleanup related task.
+-->if a component instance is unmounted, you cannot mount it again.
+--------------------------------------------------------------------------------
+LIST:
+
+map()-if we want to display multiple values from group of  list we use map()
+----------------------------------------------------------------------------
+FORM-COMPONENTS:
+
+1)Uncontrolled
+-->maintained by DOM
+-->no need to use event-handlers
+-->traditional html form which has own state
+-->'ref'=attributes is used to access the input field value
+2)controlled
+-->maintained by components(class/functional)
+-->needs to use evnt handlers
+-->setState() is used to access the form data
+------------------------------------------------------------------------------
+REACT-EVENTS:
+
+-->every event-handlers here are camel-case in react 
